@@ -30,7 +30,7 @@
  * @details Evaluates to the smaller of the two arguments.
  */
 #ifndef MIN
-#define MIN(a,b) (((a) < (b)) ? (a) : (b))
+#define MIN(value1,value2) (((value1) < (value2)) ? (value1) : (value2))
 #endif
 
 /**
@@ -38,7 +38,7 @@
  * @details Evaluates to the larger of the two arguments.
  */
 #ifndef MAX
-#define MAX(a,b) (((a) > (b)) ? (a) : (b))
+#define MAX(value1,value2) (((value1) > (value2)) ? (value1) : (value2))
 #endif
 
 /**

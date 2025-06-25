@@ -14,6 +14,7 @@
  *****************************************************************************/
 
 #include <stdint.h>  /* for standard integer types */
+#include <stdbool.h>
 
 /**
  * @brief Standard return type for functions.
@@ -26,8 +27,8 @@ typedef uint8_t Std_ReturnType;
  * @brief Boolean type definition.
  * @details Defines a boolean type as an unsigned 8-bit integer.
  */
-#ifndef BOOL
-typedef uint8_t BOOL;
+#ifndef DT_BOOL
+typedef bool DT_BOOL;
 #endif
 
 /**
@@ -35,7 +36,7 @@ typedef uint8_t BOOL;
  * @details Represents the boolean true state, defined as 1.
  */
 #ifndef TRUE
-#define TRUE  ((BOOL)1u)
+#define TRUE  ((DT_BOOL)1u)
 #endif
 
 /**
@@ -43,7 +44,7 @@ typedef uint8_t BOOL;
  * @details Represents the boolean false state, defined as 0.
  */
 #ifndef FALSE
-#define FALSE ((BOOL)0u)
+#define FALSE ((DT_BOOL)0u)
 #endif
 
 /******************************************************************************
