@@ -13,9 +13,12 @@
  * Includes
  *****************************************************************************/
 
-#include <stdint.h>  /* for standard integer types */
+#include <stdint.h>
 #include <stdbool.h>
 
+/******************************************************************************
+ * Macros
+ *****************************************************************************/
 /**
  * @brief Standard return type for functions.
  * @details Used to represent the status of a function call,
@@ -47,9 +50,13 @@ typedef bool DT_BOOL;
 #define FALSE ((DT_BOOL)0u)
 #endif
 
-/******************************************************************************
- * Macros
- *****************************************************************************/
+/**
+ * @brief NULL pointer definition.
+ * @details Represents a null pointer constant.
+ */
+#ifndef NULL_PTR
+#define NULL_PTR ((void *)0)
+#endif
 
 /**
  * @brief Standard success return value.
@@ -66,6 +73,10 @@ typedef bool DT_BOOL;
 #ifndef E_NOT_OK
 #define E_NOT_OK   ((Std_ReturnType)1u)
 #endif
+
+/******************************************************************************
+ * Typedefs
+ *****************************************************************************/
 
 /******************************************************************************
  * Enumerations
@@ -87,24 +98,12 @@ typedef enum {
  * Structures
  *****************************************************************************/
 
-/* No structures currently defined */
-
 /******************************************************************************
- * Function Prototypes
+ * Global Variables (extern declarations)
  *****************************************************************************/
-
-/* No function prototypes currently defined */
-
-/******************************************************************************
- * Global Variables
- *****************************************************************************/
-
-/* No global variables currently defined */
 
 /******************************************************************************
  * Constants
  *****************************************************************************/
-
-/* No additional constants currently defined */
 
 #endif /* STD_TYPES_H */
